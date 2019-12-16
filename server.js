@@ -1,7 +1,8 @@
 require("dotenv").config();
 
-// DB connection
+// If deployed, use the deployed DB, otherwise use the local mongoHeadlines DB
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+// Connect to the mongo DB
 mongoose.connect(MONGODB_URI);
 
 var express = require("express");
