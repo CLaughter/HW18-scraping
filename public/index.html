@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>  <meta charset="utf-8">
+  <title>Scraper</title>
+
+  <link rel="stylesheet" href="/styles/reset.css" media="screen" title="no title" charset="utf-8">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Libre+Barcode+128+Text|Ubuntu+Condensed&display=swap|Ubuntu+Mono&display=swap"
+    rel="stylesheet">
+    
+  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <header class="row">
+    <div class="col-sm-2"
+      <h1>Scrape it!</h1>
+    </div>
+    <div class="col-sm-2">
+      <button class="search btn-primary">Home</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="delete btn-#c00c00">Scrape New Articles</button>
+    </div>
+
+
+  </header>
+  
+  <form action="/submit" method="post">
+    <h2>Enter a Note!</h2>
+      <input type="text" name="title" placeholder="Title">
+      <textarea type="text" name="body" placeholder="Write Note Here"></textarea>
+
+      <input type="submit">
+      <a href="/notes">See your notes!</a>
+      <a href="/user">See your profile!</a>
+      <a href="/populateduser">See your profile, populated with notes!</a>
+    </form>
+
+</div>
+    
+  <section id="bottom">
+    <footer id="footer">
+      Copyright ©
+    </footer>
+  </section>
+
+</body>
+</html>
