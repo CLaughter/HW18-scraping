@@ -1,20 +1,6 @@
 # All the News That's Fit to Scrape
 
-## Overview
-
-### This assignment is creating a web app that lets users view and leave comments on the latest news without actually writing any articles; rather, using Mongoose and Cheerio scrape news from another site utilizing the following:
-
-* express
-
-* express-handlebars
-
-* *mongoose
-
-* cheerio
-
-* axios
-
-### mLab is remote MongoDB database that Heroku supports natively.
+### This is a webscraper app built from scratch. It will store the scraped data using MongoDB. The backend is written in Javascript running on NodeJS. Several libraries are used on the backend including Express, Axios, and Cheerio. Bootstrap is used for styling the front-end and JQuery sends requests to the backend. Finally, the app is deployed on Heroku with mLab (remote MongoDB database that Heroku supports natively).
 
 ### Whenever a user visits your site, the app will scrape news articles from a news outlet and displays the following information for each article:
 

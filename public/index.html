@@ -14,47 +14,74 @@
     
   <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 </head>
 <body>
-
-<div class="container">
-  <header class="row">
-    <div class="col-sm-2"
-      <h1>Scrape it!</h1>
-    </div>
-    <div class="col-sm-2">
-      <button class="search btn-primary">Home</button>
-    </div>
-    <div class="col-sm-4">
-      <button class="delete btn-#c00c00">Scrape New Articles</button>
-    </div>
-
-
-  </header>
   
-  <form action="/submit" method="post">
-    <h2>Enter a Note!</h2>
-      <input type="text" name="title" placeholder="Title">
-      <textarea type="text" name="body" placeholder="Write Note Here"></textarea>
+  <div class="container">
+    <header class="row">
+      <div class="col-sm-12">
+        <button class="delete btn-danger">Scrape New Articles</button>
+      </div>
+      <!-- <div class="col-sm-1">
+        <button class="search btn-primary">Home</button>
+      </div> -->
+    </header>
+    <br>
+    <form id="form" action="/submit" method="post">
+      <input type="text" name="title" placeholder="Title">  
+        <input type="submit">
+      <h3>Please submit your comment!</h3>
+      <textarea type="text" name="body" placeholder="Scribble here"></textarea>
+        
+        <!-- <a href="/notes">See your notes!</a>
+        <a href="/user">See your profile!</a>
+        <a href="/populateduser">See your profile, populated with notes!</a> -->
+      </form>
+      <hr>
 
-      <input type="submit">
-      <a href="/notes">See your notes!</a>
-      <a href="/user">See your profile!</a>
-      <a href="/populateduser">See your profile, populated with notes!</a>
-    </form>
+    <h3>Enter term to scrape</h3>
 
-</div>
+    <div class="row mt-1">
+      <div class="col">
+        <form>
+          <div class="form-group">
+            <label for="scrapeTerm">Scrape by term</label>
+            <input type="text" class="form-control" id="scrapeTerm" aria-describedby="scrapeHelp" placeholder="Enter single word search term">
+            <!-- <small id="scrapeHelp" class="form-text text-muted">Enter a single word search term to scrape.</small> -->
+          </div>
+          <button type="submit" class="btn btn-primary" id="scrapeButton">Scrape</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row mt-1">
+      <div class="col">
+        <div class="form-group">
+          <label for="searchTerm">Search scraped terms stored in MongoDB.</label>
+          <input type="text" class="form-control" id="searchTerm" aria-describedby="searchHelp" placeholder="Enter single word search term">
+          <!-- <small id="searchHelp" class="form-text text-muted">Enter a single word search term to search MongoDB for items already scraped.</small> -->
+        </div>
+        <button type="submit" class="btn btn-primary" id="searchButton">Search Saved items</button>
+      </div>
+    </div>
+    <hr>
+
+    <h4 class="mt-5">Results:</h4>
+    <div class="mt-5" id="tableDiv">
+        Scrapped items go here.
+    </div>
+  <br>
+  </div>
     
   <section id="bottom">
     <footer id="footer">
-      Copyright ©
+      Copyright © <a id="nyt" href="https://www.nytimes.com/section/technology">NY Times</a>
     </footer>
   </section>
 
-  <script src="./js/app.js">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
