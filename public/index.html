@@ -28,10 +28,10 @@
     </header>
     <br>
     <form id="form" action="/submit" method="post">
-      <input type="text" name="title" placeholder="Title">  
+      <input type="text" name="title" placeholder="Title of your comment">  
         <input type="submit">
       <h3>Please submit your comment!</h3>
-      <textarea type="text" name="body" placeholder="Scribble here"></textarea>
+      <textarea type="text" name="body" placeholder="Scribble it here"></textarea>
         
         <!-- <a href="/notes">See your notes!</a>
         <a href="/user">See your profile!</a>
@@ -68,14 +68,15 @@
 
     <h4 class="mt-5">Results:</h4>
     <div class="mt-5" id="tableDiv">
-        Scrapped items go here.
+      <div id="articles"></div>
+      <div id="notes"></div>
     </div>
   <br>
   </div>
     
   <section id="bottom">
     <footer id="footer">
-      Copyright © <a id="nyt" href="https://www.nytimes.com/section/technology">NY Times</a>
+      Copyright © <a id="nyt" href="https://www.nytimes.com/section/technology">NYTimes.com</a>
     </footer>
   </section>
 

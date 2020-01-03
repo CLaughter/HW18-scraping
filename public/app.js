@@ -1,10 +1,3 @@
-// $.get("/Article", function(data) {
-//   console.log(data);
-//   for(var i = 0; i = data.length; i++) {
-//     $("#results").append("<li>" + data[i] + "</li>");
-//   }
-// });
-
 // Grab the articles as a json
 $.getJSON("/articles", function(data) {
   // For each one
