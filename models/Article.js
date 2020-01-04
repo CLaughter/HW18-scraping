@@ -20,7 +20,7 @@ const ArticleSchema = new Schema({
     ref: "Note"
   }
 });
-const Article = mongoose.model('Article', ArticleSchema);
+const Article = mongoose.model("Article", ArticleSchema);
 
 
 module.exports = Article;

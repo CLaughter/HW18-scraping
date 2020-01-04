@@ -27,7 +27,7 @@
       </div> -->
     </header>
     <br>
-    <form id="form" action="/submit" method="post">
+    <!-- <form id="form" action="/submit" method="post">
       <input type="text" name="title" placeholder="Title of your comment">  
         <input type="submit">
       <h3>Please submit your comment!</h3>
@@ -36,20 +36,17 @@
         <!-- <a href="/notes">See your notes!</a>
         <a href="/user">See your profile!</a>
         <a href="/populateduser">See your profile, populated with notes!</a> -->
-      </form>
-      <hr>
-
-    <h3>Enter term to scrape</h3>
+      <!-- </form>
+      <hr> -->
 
     <div class="row mt-1">
       <div class="col">
         <form>
           <div class="form-group">
-            <label for="scrapeTerm">Scrape by term</label>
-            <input type="text" class="form-control" id="scrapeTerm" aria-describedby="scrapeHelp" placeholder="Enter single word search term">
-            <!-- <small id="scrapeHelp" class="form-text text-muted">Enter a single word search term to scrape.</small> -->
+            <label for="userName"></label>
+            <input type="text" class="form-control" id="userName" aria-describedby="userHelp" placeholder="User Name">
           </div>
-          <button type="submit" class="btn btn-primary" id="scrapeButton">Scrape</button>
+          <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
         </form>
       </div>
     </div>
@@ -57,16 +54,15 @@
     <div class="row mt-1">
       <div class="col">
         <div class="form-group">
-          <label for="searchTerm">Search scraped terms stored in MongoDB.</label>
-          <input type="text" class="form-control" id="searchTerm" aria-describedby="searchHelp" placeholder="Enter single word search term">
-          <!-- <small id="searchHelp" class="form-text text-muted">Enter a single word search term to search MongoDB for items already scraped.</small> -->
+          <label for="comment"></label>
+          <input type="text" class="form-control" id="comment" aria-describedby="commentHelp" placeholder="Enter your comment">
         </div>
-        <button type="submit" class="btn btn-primary" id="searchButton">Search Saved items</button>
+        <button type="submit" class="btn btn-primary" id="searchButton">Submit</button>
       </div>
     </div>
     <hr>
 
-    <h4 class="mt-5">Results:</h4>
+    <h4 class="mt-2">Results:</h4>
     <div class="mt-5" id="tableDiv">
       <div id="articles"></div>
       <div id="notes"></div>
