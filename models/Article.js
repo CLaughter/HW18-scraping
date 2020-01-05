@@ -18,7 +18,8 @@ const ArticleSchema = new Schema({
   note: {
     type: Schema.Types.ObjectId,
     ref: "Note"
-  }
+  },
+  lastUpdated: Date
 });
 const Article = mongoose.model("Article", ArticleSchema);
 
