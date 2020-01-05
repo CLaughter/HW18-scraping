@@ -56,9 +56,9 @@ app.get("/", function (req, res) {
 
         // Save these results in an object that we'll push into the results array we defined earlier
         const result = {
-          title,
+          title: "Title" + title,
           link: "https://www.nytimes.com" + link,
-          description
+          description: "Summary" + description
         }
 
         // Create a new Article using the `result` object built from scraping
