@@ -5,18 +5,6 @@ $( document ).ready(function() {
       $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "<br />" + data[i].description + "</p>");
     }
 });
-  // $.ajax({
-  //   method: "GET",
-  //   url: "/article"
-  // })
-  //   // With that done
-  //   .then(function(data) {
-  //     // Log the response
-  //     console.log(data);
-  //     // Empty the notes section
-  //     // $("#notes").empty();
-  //   });
-});
 
 // Whenever someone clicks a p tag
 $(document).on("click", "p", function() {
